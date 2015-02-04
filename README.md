@@ -17,3 +17,6 @@ In production you will get something that your thymeleaf templates can inject wi
   <meta name="_csrf_header" th:content="${_csrf.headerName}" />
   <meta name="_csrf" th:content="${_csrf.token}" />
 ```
+
+There is an initializer that will add an ajaxPrefilter to include the CSRF
+Header in every request.
