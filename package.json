@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/toranb/ember-cli-thymeleaf-csrf"
   },
+  "homepage": "https://github.com/toranb/ember-cli-thymeleaf-csrf",
   "bugs": {
     "url": "https://github.com/toranb/ember-cli-thymeleaf-csrf/issues"
   },
