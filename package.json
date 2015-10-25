@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-thymeleaf-csrf",
   "description": "An ember-cli addon to include a CSRF token in every ajax request using thymeleaf templates",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "start": "ember server",
     "build": "ember build",
