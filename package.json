@@ -1,17 +1,25 @@
 {
   "name": "ember-cli-thymeleaf-csrf",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An ember-cli addon to include a CSRF token in every ajax request using thymeleaf templates",
+  "version": "0.2.0",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "thymeleaf",
+    "ember-cli",
+    "spring",
+    "ember",
+    "java"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Toran Billups",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toranb/ember-cli-thymeleaf-csrf"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",

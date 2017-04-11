@@ -1,27 +1,22 @@
-# ember-cli-thymeleaf-csrf
+This addon will dynamically add the csrf headers for thymeleaf
 
-This README outlines the details of collaborating on this Ember addon.
 
-## Installation
+In development/test/server builds you will get the following
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-thymeleaf-csrf`
-* `npm install`
-* `bower install`
 
-## Running
+```
+  <meta name="_csrf_header" content="abc" />
+  <meta name="_csrf" content="abc" />
+```
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+In production you will get something that your thymeleaf templates can inject with
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
 
-## Building
+```
+  <meta name="_csrf_header" th:content="${_csrf.headerName}" />
+  <meta name="_csrf" th:content="${_csrf.token}" />
+```
 
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+There is an initializer that will add an ajaxPrefilter to include the CSRF
+Header in every request.
