@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import $ from 'jquery';
 
 export default function() {
-  Ember.$.ajaxPrefilter(function(options, originalOptions, xhr) {
+  $.ajaxPrefilter(function(options, originalOptions, xhr) {
     xhr.setRequestHeader(
-      Ember.$('meta[name=_csrf_header]').attr('content'),
-      Ember.$('meta[name=_csrf]').attr('content'));
+      $('meta[name=_csrf_header]').attr('content'),
+      $('meta[name=_csrf]').attr('content'));
   });
 }
